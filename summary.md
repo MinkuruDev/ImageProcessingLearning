@@ -1,5 +1,7 @@
 # **TỔNG HỢP KIẾN THỨC**
 
+> 6 hours of debugging can save you 5 minutes of reading documentation
+
 |Thư viện/Hàm                                   |Chức năng                                                                      |
 |---                                            |---                                                                            |
 |***`PIL`***                                    |*[Documentation](https://pillow.readthedocs.io/en/stable/reference/index.html)*|
@@ -57,8 +59,12 @@
 |***`scipy`***                                  |*[Documentation](https://docs.scipy.org/doc/scipy-1.9.3/reference/index.html)*|
 |`misc.imread(path)`                            |Đọc ảnh tại `path` và trả về một `numpy.ndarray`|
 |`misc.face()`                                  |Đọc dữ liệu raccon có sẵn dưới dạng `numpy.ndarray`|
-|`misc.imsave(path,im)`                        |Lưu ảnh `im` vào đường dẫn `path`|
+|`misc.imsave(path,im)`                         |Lưu ảnh `im` vào đường dẫn `path`|
+|`signal.convolve(im,kernel,mode)`              |Nhân tích chập `im` và `kernel`|
+|`signal.convolve2d(im,kernel,mode)`            |Nhân tích chập `im` và `kernel`, hai ảnh này là mảng 2 chiều (ảnh grayscale)|
 |---|---|
 |***`numpy`***                                  |*[Documentation](https://numpy.org/doc/stable/reference/index.html)*|
 |`array(im)`                                    |Đọc `im` là một đối tượng ảnh `PIL`, trả về ảnh là `ndarray`|
+|`fft.fft2(im)`                                 |Thực hiện biến đổi fourier thuận với ảnh `im` (`im` là `ndarray`)|
+|`fft.ifft2(im)`                                |Thực hiện biến đổi fourier nghịch với ảnh `im`|
 
